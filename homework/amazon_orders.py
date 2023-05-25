@@ -20,11 +20,10 @@ driver.find_element(By.ID, "nav-orders").click()
 sleep(4)
 
 # verify search results
-expected_text = "Sign In"
-actual_text = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small").text
-
-assert actual_text == expected_text, f'expected {expected_text}, but got {actual_text}
-
-assert driver.find_element(By.ID, "ap_email").is_displayed(), "Email not shown"
-driver.quit()
+def verify(context):
+    expected_text = "Sign In"
+    actual_text = driver.find_element(By.XPATH,'//h1[@class="a-spacing-small"]').text
+    assert actual_text == expected_text, f"expected {expected_text}, but got {actual_text}"
+    assert driver.find_element(By.ID, "ap_email").is_displayed(), "Email not shown"
+    driver.quit()
 
