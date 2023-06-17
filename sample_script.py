@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
+
 # get the path to the ChromeDriver executable
 driver_path = ChromeDriverManager().install()
 

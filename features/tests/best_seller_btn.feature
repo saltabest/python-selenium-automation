@@ -1,6 +1,7 @@
 # Created by Eugene at 5/31/2023
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Best Seller Links
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: 5 Links seen
+    Given Open Amazon Page
+    When Click on Best Sellers
+    Then Verify 5 Links

@@ -1,6 +1,6 @@
 # Created by Eugene at 6/12/2023
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Test product page
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Verify colors
+    Given Open product page B079KCTN1D
+    Then Verify user can click on different options
