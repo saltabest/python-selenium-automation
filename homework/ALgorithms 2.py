@@ -1,7 +1,3 @@
-# Split in Half
-# Given a string. Split it into two equal parts. Swap these parts and return the result.
-# If the string has odd characters, the first part should be one character greater than the second part.
-# Example: string = 'bbbbbcaaaaa'. Result = ‘aaaaabbbbbc’.
 
 def split_2(s):
     length = len(s)
@@ -17,12 +13,6 @@ test_string_odd =  "aaabccc"
 test_string_even = "aaabbb"
 print(split_2(test_string_odd))
 print(split_2(test_string_even))
-
-
-# Unique Characters in String
-# Given a string, determine if it consists of all unique characters.
-# For example, the string 'abcde' has all unique characters and should return True.
-# The string 'aabcde' contains duplicate characters and should return False.
 
 def unique_characters(s):
     lenstr = len(s)
