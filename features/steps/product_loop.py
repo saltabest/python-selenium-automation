@@ -15,7 +15,7 @@ def open_page(context):
 
 @then("Verify user can click on different options")
 def verify_can_click_colors(context):
-    expected_result = (["Blue Jay", "Peacock Blue", "Plum"])
+    expected_result = ["Blue Jay", "Peacock Blue", "Plum"]
     actual_resul = []
     colors = context.driver.find_element(*COLOR_OPTIONS)
 
