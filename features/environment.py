@@ -33,6 +33,6 @@ def after_step(context, step):
         print('\nStep failed: ', step)
 
 
-def after_scenario(context, feature):
+def after_scenario(context, feature)
     context.driver.delete_all_cookies()
     context.driver.quit()
